@@ -1,0 +1,18 @@
+subprojects {
+	apply plugin:'java'
+	apply plugin:'application'
+  apply plugin:'idea'
+
+	mainClassName = "Example"
+
+	repositories {
+    mavenLocal()
+		mavenCentral()
+		jcenter()
+	}
+	dependencies {
+		compile 'com.google.guava:guava:[17,18)'
+		compile 'commons-collections:commons-collections:[3,4)'
+		compile 'org.springframework:spring-jdbc:[4,5)'
+	}
+}
